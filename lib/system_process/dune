@@ -1,0 +1,7 @@
+;; Virtual library representing platform specific
+;; processes for Linux and MacOS
+(library
+ (name system_process)
+ (public_name virtual.system_process)
+ (libraries unix)
+ (virtual_modules system_process))

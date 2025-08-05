@@ -1,0 +1,7 @@
+
+(library
+ (name virtual)
+ (public_name virtual)
+ (wrapped false)
+ (modules virtual))
+

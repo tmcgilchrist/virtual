@@ -1,0 +1,8 @@
+(library
+ (name linux_system_process)
+ (public_name virtual.linux_system_process)
+ ; (modules linux_system_process)
+ (enabled_if
+  (= %{system} "linux"))
+ (libraries unix)
+ (implements system_process))

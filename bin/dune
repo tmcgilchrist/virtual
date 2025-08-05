@@ -1,0 +1,13 @@
+(executable
+ (enabled_if
+  (= %{system} "linux"))
+ (public_name virtual)
+ (name main)
+ (libraries virtual virtual.linux_system_process))
+
+(executable
+ (enabled_if
+  (= %{system} "macosx"))
+ (public_name virtual)
+ (name main)
+ (libraries virtual virtual.macosx_system_process))
