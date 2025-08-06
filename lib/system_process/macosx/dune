@@ -1,8 +1,8 @@
-(library
- (name macosx_system_process)
- (public_name virtual.macosx_system_process)
- ; (modules macosx_system_process)
- (enabled_if
-  (= %{system} "macosx"))
- (libraries unix)
- (implements system_process))
+; (library
+;  (name macosx_system_process)
+;  (public_name virtual.macosx_system_process)
+;  ; (modules macosx_system_process)
+;  (enabled_if
+;   (= %{system} "macosx"))
+;  (libraries unix)
+;  (implements system_process))
