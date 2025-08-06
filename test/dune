@@ -1,5 +1,11 @@
 (test
  (name test_virtual)
- (enabled_if
+ (build_if
   (= %{system} "linux"))
  (libraries virtual virtual.linux_system_process))
+
+(test
+ (name test_virtual)
+ (build_if
+  (= %{system} "macosx"))
+ (libraries virtual virtual.macosx_system_process))
